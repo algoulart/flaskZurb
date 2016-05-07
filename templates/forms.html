@@ -8,14 +8,15 @@
     </div>
   </div>
 
-  <form>
+  <form data-abide>
 <!--  name  -->
     <div class="row">
       <div class="small-2 medium-1 column">
 		  <label for="name" class="right inline">name</label>
     </div>
       <div class="small-10 medium-11 column">
-		  <input id="name" type="text" placeholder="type your name" />
+		  <input required id="name" type="text" placeholder="type your name" />
+      <small class="error">Plese enter your name to continue</small>
 	  </div>
     </div>
 
@@ -25,7 +26,8 @@
 		<label for="email">email</label>
     <div class="row collapse">
       <div class="small-9 column">
-        <input id="email" type="text" placeholder="your email address" />
+        <input required id="email" type="email" placeholder="your email address" />
+        <small class="error">Enter a valid email</small>
       </div>
         <div class="small-3 column ">
           <a href="#" class="button postfix">Signup</a>
@@ -33,14 +35,11 @@
       </div>
     </div>
 
-
-
-
-
 <!--  number  -->
       <div class="medium-6 large-4 column">
         <label for="number">random number</label>
-		<input id="number" type="text" placeholder="please type a number" />
+		<input required pattern="number" id="number" type="text" placeholder="please type a number" />
+    <small class="error">Enter a number to continue</small>
       </div>
 
 <!--  domain  -->
@@ -74,7 +73,8 @@
     </div>
     <div class="row">
       <div class="small-10 medium-6 large-4 small-centered column">
-        <input type="text" placeholder="confirm password" />
+        <input required data-equalto="pw" type="text" placeholder="confirm password" />
+        <small class="error">Password does not match</small>
       </div>
     </div>
 
