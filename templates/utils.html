@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+     <div class="column">
+       <h1>popups &amp; overlays</h1>
+     </div>
+   </div>
+   <hr />
+   <div class="row">
+     <div class="medium-5 medium-offset-1 column">
+       <h2>tooltips</h2>
+       <p>Has errem erroribus eu. Id eros lorem appetere eos, sit ea altera singulis constituam, sit ipsum molestie.</p>
+   <p>
+  <span class="has-tip" data-tooltip title="Tootips for popups">Tooltips</span>
+   </p>
+     </div>
+     <div class="medium-6 column">
+     <img src="static/img/assets/tours-wide.png" />
+     </div>
+   </div>
+   <hr />
+   <div class="row">
+   <div class="medium-4 medium-offset-1 column">
+     <h2>alert box</h2>
+     <div class="alert-box alert" data-alert>alert boxes are for important messages<a href="#" class="close">&times;</a>
+</div>
+   </div>
+ </div>
+   <hr />
+
+   <div class="row">
+     <div class="medium-offset-1 column">
+       <h2>full screen overlay</h2>
+       <a href="#" class="button alert round" data-reveal-id="message">click for a popup</a>
+       <div class="reveal-modal" data-reveal id="message">
+         <h2>Important Message</h2>
+         <p>Modals popup to take full attention</p>
+         <p>Important details delivered this way have impact.</p>
+         <a href="#" class="close-reveal-modal">&times;</a>
+       </div>
+     </div>
+   </div>
+     <hr />
+
+ <div class="row">
+     <div class="medium-offset-1 column">
+       <h2>lightbox</h2>
+       <ul class="clearing-thumbs" data-clearing>
+         <li><a class="th" href="static/img/assets/chrysler.jpg"><img src="static/img/assets/chrysler-t.jpg" /></a></li>
+         <li><a class="th" href="static/img/assets/mirror.jpg"><img src="static/img/assets/mirror-t.jpg" /></a></li>
+         <li><a class="th" href="static/img/assets/nyse.jpg"><img src="static/img/assets/nyse-t.jpg" /></a></li>
+         <li><a class="th" href="static/img/assets/traffic.jpg"><img src="static/img/assets/traffic-t.jpg" /></a></li>
+       </ul>
+     </div>
+   </div>
+ <hr />
+ <footer class="row">
+   <br><br>
+ </footer>
+{% endblock %}
