@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+
+  <div class="row">
+    <div class="column">
+      <h1>forms</h1>
+    </div>
+  </div>
+
+  <form>
+<!--  name  -->
+    <div class="row">
+      <div class="small-2 medium-1 column">
+		  <label for="name" class="right inline">name</label>
+    </div>
+      <div class="small-10 medium-11 column">
+		  <input id="name" type="text" placeholder="type your name" />
+	  </div>
+    </div>
+
+  <div class="row">
+<!--  email  -->
+  <div class="medium-6 large-4 column">
+		<label for="email">email</label>
+    <div class="row collapse">
+      <div class="small-9 column">
+        <input id="email" type="text" placeholder="your email address" />
+      </div>
+        <div class="small-3 column ">
+          <a href="#" class="button postfix">Signup</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<!--  number  -->
+      <div class="medium-6 large-4 column">
+        <label for="number">random number</label>
+		<input id="number" type="text" placeholder="please type a number" />
+      </div>
+
+<!--  domain  -->
+      <div class="large-4 column">
+        <label for="domain">domain</label>
+        <div class="row collapse">
+          <div class="small-3 columns">
+            <span class="prefix">http://</span>
+          </div>
+          <div class="small-9 columns">
+		        <input id="domain" type="text" placeholder="your domain name" />
+          <div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  submit  -->
+    <div class="row">
+      <div class="small-centered small-10 medium-8 large-6 column">
+        <input type="button" class="button success expand" value="submit the form" />
+      </div>
+    </div>
+    <hr />
+
+<!--  password  -->
+    <div class="row">
+      <div class="small-10 medium-6 large-4 small-centered column">
+        <input id="pw" type="text" placeholder="password" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-10 medium-6 large-4 small-centered column">
+        <input type="text" placeholder="confirm password" />
+      </div>
+    </div>
+
+  </form>
+{% endblock %}
