@@ -20,6 +20,6 @@ def styles():
 @app.route('/buttons')
 def buttons():
     return render_template('buttons.html')
-    
+
 if __name__ == "__main__":
     app.run()
