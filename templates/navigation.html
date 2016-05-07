@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+   <!-- top bar -->
+  <div class="fixed">
+
+  <nav class="top-bar" data-topbar>
+  	<ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Destination Tours</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="#">About Us</a></li>
+      <li class="has-dropdown">
+        <a href="#">Tours</a>
+        <ul class="dropdown">
+          <li><a href="#">tour package 1</a></li>
+          <li><a href="#">tour package 2</a></li>
+          <li><a href="#">tour package 3</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="right">
+      <li class="has-form">
+        <div class="row collapse">
+          <div class="column small-8">
+            <input type="text"/>
+          </div>
+          <div class="column small-4">
+            <a href="#" class="button alert expand">Search</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    </section>
+  </nav>
+</div>
+
+
+  <!-- sub nav -->
+  </br>
+   <div class="row">
+	   <div class="column">
+			<dl class="sub-nav">
+			  <dt>Tours:</dt>
+			  <dd class="active"><a href="#">Best Sellers</a></dd>
+			  <dd><a href="#">Most Active</a></dd>
+			  <dd><a href="#">Highest Rated</a></dd>
+			  <dd><a href="#">New Tours</a></dd>
+			</dl>
+		<div>
+	<div>
+	<!-- breadcrumbs -->
+  <div class="row">
+    <ul class="breadcrumbs">
+		<li class="current"><a href="#">Home</a></li>
+		<li><a href="#">Tours</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Testimonials</a></li>
+	</ul>
+  </div>
+
+  <div class="row">
+    <div class="medium-6 column">
+      <p>Stet dicam utamur eu has. His ei partem voluptaria assueverit. Mazim choro cum et. Nisl nusquam scriptorem cum ut, agam
+      veri ei ius. Nam ex eligendi temporibus, ius probo tantas adolescens ad. Id vis dissentias consequuntur, odio delectus eam
+      id.</p>
+      <p>Te his mutat causae luptatum. Te duo eius clita posidonium. Ei sapientem suscipiantur voluptatibus mei. Has errem
+      erroribus eu. Id eros lorem appetere eos, sit ea altera singulis constituam, sit in ipsum molestie. Vim an omnesque appetere
+      patrioque, sit ne veri facer. Ipsum dicam has eu, mel in magna exerci nostrud, aeterno oblique eum ei.</p>
+    </div>
+    <div class="small-6 medium-3 column">
+      <img src="static/img/tours-tall.png" />
+    </div>
+
+<!-- side nav -->
+    <div class="small-6 medium-3 column">
+      <ul class="side-nav">
+        <li><a href="#">Link 1</a></li>
+        <li>
+          <a data-dropdown="sideNavdd" href="#sideNavdd" >Link 2</a>
+			  <div id="sideNavdd" class="f-dropdown" data-dropdown-content>
+				<a href="#">Sub Link 1</a>
+				<a href="#">Sub Link 2</a>
+				<a href="#">Sub Link 3</a>
+            </div>
+        </li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+<!-- icon bar -->
+  <footer class="column">
+    <div class="icon-bar five-up vertical">
+    <a class="item" href="#"><i class="fa fa-info"></i><label>Info</label></a>
+    <a class="item" href="#"><i class="fa fa-map"></i><label>Location</label></a>
+    <a class="item" href="#"><i class="fa fa-envelope"></i><label>Email</label></a>
+    <a class="item" href="#"><i class="fa fa-bar-chart"></i><label>Charts</label></i></a>
+    <a class="item" href="#"><i class="fa fa-hand-peace-o"></i><label>Share</label></i></a>
+  </div>
+  </footer>
+{% endblock %}
